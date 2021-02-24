@@ -10,7 +10,35 @@ namespace D_Variables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string firstInput;
+            string secondInput;
+            string thirdInput;
+
+            Console.WriteLine("Введите 3 числа");
+
+            Console.WriteLine("Первое число (A):");
+            firstInput = Console.ReadLine();
+            double firstNumber = Convert.ToDouble(firstInput);
+
+            Console.WriteLine("Второе число (B):");
+            secondInput = Console.ReadLine();
+            double secondNumber = Convert.ToDouble(secondInput);
+
+            Console.WriteLine("Третье число (С):");
+            thirdInput = Console.ReadLine();
+            double thirdNumber = Convert.ToDouble(thirdInput);
+
+            void LinearEquation(double a, double b, double c)
+            {
+                double x = (c - b) / a;
+                Console.WriteLine($"Решение линейного уравнения стандартного вида, где A*X+B=C: {x}"); 
+            }
+
+            LinearEquation(firstNumber, secondNumber, thirdNumber);
+
+            Console.ReadKey();
         }
+
+
     }
 }

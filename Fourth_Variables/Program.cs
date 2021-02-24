@@ -26,7 +26,10 @@ namespace C_Variables
             double resultDivision = firstNumber / secondNumber;
             Console.WriteLine($"Результат операции деления А и В = {resultDivision}");
             
-            double resultRemainder = firstNumber % secondNumber;
+            //double resultRemainder = firstNumber % secondNumber;
+            //Console.WriteLine($"Результат остаток от деления А и В = {resultRemainder}");
+
+            double resultRemainder = (resultDivision - (int)resultDivision) * 10;
             Console.WriteLine($"Результат остаток от деления А и В = {resultRemainder}");
 
             Console.ReadKey();
